@@ -1,4 +1,11 @@
-<img width="1899" height="868" alt="image" src="https://my-movie-journal-ten.vercel.app/" />
+<a href="https://my-movie-journal-ten.vercel.app/">
+  <img
+    width="1898"
+    height="870"
+    alt="Náhled webu"
+    src="https://github.com/user-attachments/assets/43e4384d-f58b-4555-b049-98b8da01d651"
+  />
+</a>
 
 # Movie Tracker CRUD
 
