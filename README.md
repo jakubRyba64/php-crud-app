@@ -1,4 +1,4 @@
-<img width="1895" height="867" alt="image" src="https://github.com/user-attachments/assets/e3ffabc1-7549-40ee-958c-06bc6d7b2aea" />
+<img width="1899" height="868" alt="image" src="https://github.com/user-attachments/assets/f563148f-148f-4a96-b3ea-40295182f87d" />
 
 # Movie Tracker CRUD
 
