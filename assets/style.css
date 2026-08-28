@@ -55,12 +55,28 @@ body {
     text-decoration: none;
 }
 
+.navbar-link-active {
+    color: #ffffff;
+    background-color: #fb343e;
+    font-weight: 700;
+}
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+
+.flash-message {
+    width: min(100% - 40px, 1180px);
+    margin: 24px auto 0;
+    padding: 14px 18px;
+    border: 1px solid #86c99a;
+    border-radius: 10px;
+    color: #176b32;
+    background-color: #eaf8ee;
 }
 
 .page-intro {

@@ -33,5 +33,5 @@ if (!mysqli_stmt_execute($statement)) {
 
 mysqli_stmt_close($statement);
 
-header("Location: filmy.php");
+header("Location: filmy.php?success=deleted");
 exit;

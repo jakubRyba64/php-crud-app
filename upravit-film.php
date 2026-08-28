@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     mysqli_stmt_close($statement);
 
-    header("Location: filmy.php");
+    header("Location: filmy.php?success=updated");
     exit;
     }
 }
@@ -145,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieTracker | Upravit film</title>
-    <link rel="stylesheet" href="assets/style.css?v=5">
+    <link rel="stylesheet" href="assets/style.css?v=7">
     <link rel="icon" href="assets/pics/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>

@@ -58,7 +58,7 @@ $movies = mysqli_fetch_all($resultMovies, MYSQLI_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieTracker | Přehled</title>
-    <link rel="stylesheet" href="assets/style.css?v=6">
+    <link rel="stylesheet" href="assets/style.css?v=7">
     <link rel="icon" href="assets/pics/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>

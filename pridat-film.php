@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (!mysqli_stmt_execute($statement)) {
             die(mysqli_stmt_error($statement));
         } else {
-            header("Location: filmy.php");
+            header("Location: filmy.php?success=added");
             exit;
         }
     }
@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieTracker | Přidat film</title>
-    <link rel="stylesheet" href="assets/style.css?v=5">
+    <link rel="stylesheet" href="assets/style.css?v=7">
     <link rel="icon" href="assets/pics/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>

@@ -23,6 +23,15 @@ if (!$result) {
 
 $movies = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+$successMessages = [
+    "added" => "Film byl úspěšně přidán.",
+    "updated" => "Film byl úspěšně upraven.",
+    "deleted" => "Film byl úspěšně smazán.",
+];
+
+$successKey = $_GET["success"] ?? "";
+$successMessage = $successMessages[$successKey] ?? null;
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +40,7 @@ $movies = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieTracker | Filmy</title>
-    <link rel="stylesheet" href="assets/style.css?v=6">
+    <link rel="stylesheet" href="assets/style.css?v=7">
     <link rel="icon" href="assets/pics/logo-icon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -49,6 +58,12 @@ $movies = mysqli_fetch_all($result, MYSQLI_ASSOC);
     </header>
 
     <main>
+        <?php if ($successMessage !== null): ?>
+            <div class="flash-message" role="status">
+                <?= e($successMessage) ?>
+            </div>
+        <?php endif; ?>
+
         <section class="page-intro">
             <div class="page-intro-content">
                 <div class="page-intro-copy">
