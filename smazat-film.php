@@ -1,8 +1,14 @@
 <?php
 
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    http_response_code(405);
+    header("Allow: POST");
+    die("Mazání je povoleno pouze přes formulář.");
+}
+
 require __DIR__ . "/assets/connection.php";
 
-$id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
+$id = filter_input(INPUT_POST, "id", FILTER_VALIDATE_INT);
 
 if ($id === false || $id === null || $id <= 0) {
     die("Neplatné ID filmu.");

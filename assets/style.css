@@ -254,6 +254,7 @@ main {
 }
 
 .movie-actions { display: flex; gap: 10px; }
+.delete-form { margin: 0; }
 .button-danger { border: 1px solid #fb343e; color: white; background-color: #fb343e; text-decoration: none; cursor: pointer; }
 .empty-message, .delete-panel { padding: 22px; }
 .delete-actions { padding: 22px 0 0; border-bottom: 0; }

@@ -93,7 +93,15 @@ $movies = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                 </p>
                                 <div class="movie-actions">
                                     <a class="button button-secondary" href="upravit-film.php?id=<?= (int) $movie["id"] ?>">Upravit</a>
-                                    <a class="button button-danger" href="smazat-film.php?id=<?= (int) $movie["id"] ?>">Smazat</a>
+                                    <form
+                                        class="delete-form"
+                                        method="POST"
+                                        action="smazat-film.php"
+                                        onsubmit="return confirm('Opravdu chcete tento film smazat?');"
+                                    >
+                                        <input type="hidden" name="id" value="<?= (int) $movie["id"] ?>">
+                                        <button class="button button-danger" type="submit">Smazat</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
