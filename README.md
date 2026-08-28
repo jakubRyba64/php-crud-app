@@ -1,3 +1,5 @@
+<img width="1895" height="867" alt="image" src="https://github.com/user-attachments/assets/e3ffabc1-7549-40ee-958c-06bc6d7b2aea" />
+
 # Movie Tracker CRUD
 
 Jednoduchá PHP/MySQL aplikace pro přidávání, zobrazování, úpravu a mazání filmů.
